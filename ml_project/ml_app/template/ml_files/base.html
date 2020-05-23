@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Predction</a>
+      </div>
+      <ul class="nav navbar-nav">
+
+        <li class="active"><a href="{% url 'ml_app:homepage' %}">Home</a></li>
+        <li><a href="{% url 'ml_app:userpage' %}">User Data</a></li>
+        <li><a href="{% url 'ml_app:resultpage' %}">Result</a></li>
+        <li><a href="{% url 'ml_app:homepage'%}">Go to home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    {%  block head_block %}
+    {% endblock %}
+  </div>
+
+
+</body>
+</html>
